@@ -1,7 +1,10 @@
 :root {
-    --background: #40e0cf;
+    --primaryColor: #f0f0f0;
+    --secondaryColor: #ffffff;
+    --primaryAccent: #008080;
+    --secondayAccent: #ff7f50;
     --fontColor: #000000;
-    --buttonColor: #7fdcd2;
+    --buttonColor: #333333;
 }
 
 body {
@@ -10,7 +13,7 @@ body {
     align-items: center;
     height: 100vh; 
     margin: 0;
-    background-color: var(--background);
+    background-color: var(--primaryColor);
     color: var(--fontColor);
 }
 
@@ -19,10 +22,13 @@ h1 {
     text-align: center; 
     margin: 0; 
     padding: 20px 0; 
+    border-bottom: 2px solid var(--primaryAccent);
+    margin-bottom: 30px;
+    background-color: var(--secondaryColor);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
 }
 
 .gameBody {
-
     font-size: 4rem;
     width: 60%; 
     display: grid;
@@ -30,7 +36,7 @@ h1 {
     gap: 1rem; 
     margin-top: 20px;
     padding: 20px; 
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  */
+    background-color: var(--secondaryColor);
 }
 
 .left, .right {
@@ -38,6 +44,9 @@ h1 {
     justify-content: center;
     align-items: center;
     padding: 20px; 
+    /* background-color: var(--primaryAccent); */
+    color: var(--secondaryColor);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
 }
 
 .startGame {
@@ -48,13 +57,14 @@ h1 {
 
 button {
     padding: 10px 15px;
-    background-color: var(--buttonColor);
-    color: var();
+    background-color: var(--primaryAccent);
+    color: var(--secondayAccent);
 }
 
 .result {
     font-size: 3vw;
     display: block;
+    color: var(--buttonColor);
 }
 
 @media (max-width: 768px) {
