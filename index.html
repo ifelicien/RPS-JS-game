@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="/script.js" defer></script>
+    <title>Rock-Paper-Scissors</title>
+</head>
+<body>
+    <h1>Rock-Paper-Scissors</h1>
+
+    <div class="startGame">
+        <button onclick="playGame(1)">Rock</button>
+        <button onclick="playGame(2)">Paper</button>
+        <button onclick="playGame(3)">Scissors</button>
+    </div>
+    
+    <div class="gameBody">
+        <div class="left">
+             <p id="userSign"></p>
+        </div>
+        <div class="right">
+            <p id="computerSign"></p>
+        </div>
+    </div>
+
+    <div class="result">
+        <p id="result"></p>
+    </div>
+
+</body>
+</html>
